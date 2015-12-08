@@ -3,12 +3,6 @@
 use Utilities\String\LongestPalindromicSubstringFinder;
 
 class LongestPalindromicSubstringFinderTest extends PHPUnit_Framework_TestCase {
-
-    public function testConfirmWorldExists()
-    {
-        $this->assertEquals(1, 1);
-    }
-
     /**
      * @param $testString
      * @dataProvider invalidArgumentDataProvider
