@@ -65,7 +65,8 @@ class LongestPalindromicSubstringFinder {
      */
     private function cleanString()
     {
-        $this->cleanedString = mb_ereg_replace('\P{L}', '', $this->originalString);
+        // \P{Xan} contains all that is not a letter or a number
+        $this->cleanedString = preg_replace('~\P{Xan}++~u', '', $this->originalString);
         return $this;
     }
 
